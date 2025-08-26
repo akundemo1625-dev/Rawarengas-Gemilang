@@ -1,74 +1,57 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Administrasi Desa</title>
-  <link rel="stylesheet" href="assets/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rawarengas Gemilang</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+    }
+    main {
+      padding: 20px;
+    }
+    footer {
+      margin-top: 30px;
+      padding: 10px;
+      background: #2c3e50;
+      color: white;
+    }
+    .card {
+      background: white;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Website Administrasi Desa</h1>
-    <nav>
-      <a href="#pengumuman">Pengumuman</a>
-      <a href="#layanan">Layanan Surat</a>
-      <a href="#pengaduan">Pengaduan</a>
-      <a href="#data">Data Desa</a>
-      <a href="#kontak">Kontak</a>
-    </nav>
+    <h1>🌾 Rawarengas Gemilang</h1>
+    <p>Website Administrasi Desa</p>
   </header>
-
+  
   <main>
-    <section id="pengumuman">
-      <h2>Pengumuman</h2>
-      <div id="daftar-pengumuman"></div>
-      <button onclick="adminLogin()">Admin</button>
-    </section>
-
-    <section id="layanan">
-      <h2>Permohonan Surat</h2>
-      <form name="layanan-surat" method="POST" data-netlify="true">
-        <input type="text" name="nama" placeholder="Nama Lengkap" required />
-        <input type="text" name="nik" placeholder="NIK" required />
-        <select name="jenis-surat" required>
-          <option value="">Pilih jenis surat</option>
-          <option value="Domisili">Surat Domisili</option>
-          <option value="Keterangan Usaha">Surat Keterangan Usaha</option>
-          <option value="Pengantar RT/RW">Pengantar RT/RW</option>
-        </select>
-        <button type="submit">Kirim</button>
-      </form>
-    </section>
-
-    <section id="pengaduan">
-      <h2>Pengaduan Warga</h2>
-      <form name="pengaduan" method="POST" data-netlify="true">
-        <input type="text" name="nama" placeholder="Nama Lengkap" required />
-        <textarea name="isi" placeholder="Isi Pengaduan" required></textarea>
-        <button type="submit">Kirim</button>
-      </form>
-    </section>
-
-    <section id="data">
-      <h2>Data & Transparansi Desa</h2>
-      <ul>
-        <li>Jumlah Penduduk: <span id="jml-penduduk">-</span></li>
-        <li>Jumlah RT/RW: <span id="jml-rtrw">-</span></li>
-        <li>APBDes: <span id="apbdes">-</span></li>
-      </ul>
-    </section>
-
-    <section id="kontak">
-      <h2>Kontak & Jam Layanan</h2>
-      <p>Email: desa@example.com</p>
-      <p>Jam Layanan: Senin - Jumat, 08.00 - 15.00 WIB</p>
-    </section>
+    <div class="card">
+      <h2>Selamat Datang!</h2>
+      <p>Ini adalah website resmi <b>Rawarengas Gemilang</b>.</p>
+      <p>Masyarakat desa dapat mengakses informasi administrasi, layanan, dan pengumuman terbaru di sini.</p>
+    </div>
   </main>
-
+  
   <footer>
-    <p>&copy; 2025 Website Administrasi Desa</p>
+    <p>© 2025 Rawarengas Gemilang</p>
   </footer>
-
-  <script src="assets/script.js"></script>
 </body>
 </html>
